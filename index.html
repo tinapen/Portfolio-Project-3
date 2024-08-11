@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Country Guide | PP3</title>
+  </head>
+  <body>
+    <h1 id="app-title">Country Info App</h1>
+    <div class="form-container">
+      <select name="countries" id="countries">
+        <option value="select">Select a country</option>
+      </select>
+      <button onclick="getCountryInfo()" id="countryBtn">Select</button>
+    </div>
+    <div id="app-container" class="app-container">
+      <div id="countryInfoContainer" class="countryInfoContainer">
+        <div id="flag-container">
+          <img src="" alt="" id="countryFlag" />
+        </div>
+        <h1 id="countryName"></h1>
+        <div id="countryAltNames" class="countryText"></div>
+        <div id="countryCapital" class="countryText"></div>
+        <div id="countryPopulation" class="countryText"></div>
+        <div id="countryLanguages" class="countryText"></div>
+        <div id="countryCurrencies" class="countryText"></div>
+        <div id="countryTimezone" class="countryText"></div>
+        <div id="countryLocation" class="countryText"></div>
+      </div>
+      <div id="countryMap"></div>
+      <div id="cityWeatherContainer"></div>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>

@@ -1,0 +1,105 @@
+:root {
+  --primary-color: #1c1d29;
+  --secondary-color: #ff7a59;
+  --tertiary-color: #ff6a00;
+  --accent-color1: #f3f3f7;
+  --accent-color2: #444444;
+  --bg-color: #ffffff;
+  --border-color: #f3f3f7;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--primary-color);
+  color: var(--primary-color);
+  font-family: "Open-Sans", sans-serif;
+  padding: 3% 0 0;
+}
+#app-title {
+  font-family: "Exo", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  text-align: center;
+  padding: 0 0 30px;
+  color: var(--tertiary-color);
+}
+
+select {
+  font-family: "Open-Sans", sans-serif;
+  color: var(--tertiary-color);
+  font-size: 20px;
+  width: 500px;
+  padding: 20px 10px;
+  border: 1px solid var(--border-color);
+  background-color: transparent;
+  border-radius: 20px;
+}
+
+option {
+  color: var(--tertiary-color);
+  font-size: 20px;
+}
+
+#countryBtn {
+  font-family: "Open-Sans", sans-serif;
+  background-color: var(--secondary-color);
+  color: var(--accent-color1);
+  border: transparent;
+  border-radius: 20px;
+  padding: 20px 50px;
+}
+
+.form-container {
+  text-align: center;
+  padding: 0 0 30px;
+}
+
+.app-container {
+  color: var(--accent-color1);
+  margin-left: 5%;
+}
+
+#countryFlag {
+  border: var(--primary-color) 1px solid;
+  width: 200px;
+}
+#countryName {
+  font-family: "Exo", sans-serif;
+}
+.countryText {
+  font-family: "Open-Sans", sans-serif;
+  font-size: 20px;
+  text-align: start;
+}
+
+#cityInput {
+  background-color: transparent;
+  border-top: transparent;
+  border-right: transparent;
+  border-left: transparent;
+  border-bottom: #ff6a00 solid 1px;
+  width: 500px;
+  margin: 0 10px 0 0;
+  padding: 10px 15px;
+}
+
+#cityBtn {
+  font-family: "Open-Sans", sans-serif;
+  font-family: "Open-Sans", sans-serif;
+  background-color: var(--secondary-color);
+  color: var(--accent-color1);
+  border: transparent;
+  border-radius: 5px;
+  padding: 10px 15px;
+}
+
+#countryMap {
+  width: 30%;
+  height: 400px;
+  background-color: var(--accent-color2);
+}
