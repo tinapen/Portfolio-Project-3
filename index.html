@@ -19,13 +19,15 @@
     <title>Country Guide | PP3</title>
   </head>
   <body>
-    <h1 id="app-title">Country Info App</h1>
+    <h1 id="app-title">Search Your Country</h1>
+    <p id="app-description">Country Info and a Weather App</p>
     <div class="form-container">
       <select name="countries" id="countries">
         <option value="select">Select a country</option>
       </select>
       <button onclick="getCountryInfo()" id="countryBtn">Select</button>
     </div>
+    <div class="spinner hidden"></div>
     <div id="app-container" class="app-container">
       <div id="countryInfoContainer" class="countryInfoContainer">
         <div id="flag-container">
@@ -40,9 +42,24 @@
         <div id="countryTimezone" class="countryText"></div>
         <div id="countryLocation" class="countryText"></div>
       </div>
-      <div id="countryMap"></div>
-      <div id="cityWeatherContainer"></div>
+      <div id="cityWeatherContainer" class="weather">
+        <div id="weather-title"></div>
+        <div id="date"></div>
+        <div id="city"></div>
+        <div id="wicon">
+          <img src="" alt="" id="wiconimg" />
+        </div>
+        <div id="temp"></div>
+        <div id="feels"></div>
+        <div class="weatherfooter">
+          <div id="wind"></div>
+          <div id="humidity"></div>
+          <div id="pressure"></div>
+          <div id="visibility"></div>
+        </div>
+      </div>
     </div>
   </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/spin.js/2.3.2/spin.min.js"></script>
   <script src="./script.js"></script>
 </html>
