@@ -49,7 +49,7 @@ const getCountryInfo = async () => {
   const selectedCountry = document.getElementById("countries");
   const countryName = selectedCountry.value;
   if (countryName === "select") {
-    alert("Please enter a city name!!!");
+    alert("Please select a country!!!");
     return;
   }
   try {
