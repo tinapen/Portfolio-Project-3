@@ -74,7 +74,7 @@ option {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 10px;
   color: var(--accent-color1);
-  margin: 2% 20%;
+  margin: 0 20%;
 }
 #countryInfoContainer {
   padding: 0 8%;
